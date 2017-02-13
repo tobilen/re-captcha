@@ -182,7 +182,7 @@ BEWARE: THE re-captcha ELEMENT ONLY WORKS IN THE DOM OR LIGHT DOM OF ANOTHER COM
                 //Remove script
                 this._removeScriptApiTag();
                 //remove container
-                document.body.removeChild(this._container);
+                if(this._container) document.body.removeChild(this._container);
                 this._container = null;
             },
 
